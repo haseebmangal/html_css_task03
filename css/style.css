@@ -22,6 +22,7 @@
 }
 
 .calculator form input{
+   
     border: 0;
     outline: 0;
     width: 60px;
@@ -31,6 +32,7 @@
     color: #fff;
     cursor: pointer;
     margin: 10px;
+    padding: 10px;
     position: relative;
     background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
     box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
@@ -39,32 +41,29 @@
 }
 form .display{
     display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-    color: #a7af7c;
+    
+    
+    
 }
 
 form .display input{
+    margin: 20px 0;
     text-align: right;
     flex: 1;
     font-size: 45px;
-    box-shadow: none;
     color: #202020;
+    background: #a7af7c;
 }
-form input.plus{
-    
-    height: 140px;
-}
+/* tried to cover the space of plus button vertically*/
+/* form input.plus{
+    grid-row: span 2;
+    height: 145px;
+} */
+
 form input.cancel{
     background: #f00;
     width: 145px;
 }
 form input.equal{
     background: #2196f3;
-}
-
-
-.display{
-
-    
 }
